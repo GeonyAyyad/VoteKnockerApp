@@ -1,0 +1,99 @@
+body {
+    background-color: lightslategrey;
+}
+
+#main-content {
+    padding-top: 60px;
+}
+
+#logo {
+ height: 50px;
+}
+
+
+/* Filter Menu */
+
+.navbar-primary {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: lightsteelblue;
+    left: 10px;
+    position: absolute;
+    top: 70px;
+    width: 300px;
+    bottom: 5px;
+    z-index: 8;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .navbar-primary-menu {
+    padding: 10px;
+  }
+
+  .navbar-primary.collapsed {
+    padding-left: 20px;
+    width: 10px;
+    left: 0px;
+  }
+  
+  .navbar-primary.collapsed .glyphicon {
+    font-size: 12px;
+  }
+ 
+  .btn-expand-collapse {
+      position: absolute;
+      display: block;
+      left: 0px;
+      bottom:0;
+      width: 100%;
+      padding: 6px 0;
+      border-top:solid 1px #666;
+      color: grey;
+      font-size: 12px;
+      text-align: center;
+  }
+  
+  .btn-expand-collapse:hover,
+  .btn-expand-collapse:focus {
+      background-color: #222;
+      color: white;
+  }
+  
+  .btn-expand-collapse:active {
+      background-color: #111;
+  }
+
+  div.form-group.row {
+    margin-bottom: 0px;
+  }
+
+  label.filter-menu
+  {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  input.filter-menu
+  {
+    height: 28px;
+  }
+
+/* mobile friendly */
+
+  label.col-sm-2 
+  {
+      width: 20%;
+      display:inline-block;
+  }
+
+  #county-input.col-sm-6
+  {
+      width: 60%;
+  }
+
+  /* Filter Menu */
