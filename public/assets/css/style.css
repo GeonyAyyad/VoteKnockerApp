@@ -13,6 +13,7 @@ body {
 
 /* Filter Menu */
 
+
 .navbar-primary {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: lightsteelblue;
@@ -30,6 +31,26 @@ body {
 
   .navbar-primary-menu {
     padding: 10px;
+  }
+
+  #city-input {
+    padding-right: 5px;
+  }
+
+  #state-input {
+    padding-left: 0px;
+  }
+
+  #status-label {
+    padding-left: 5px;
+  }
+
+  #status-input {
+    padding-left: 10px;
+  }
+  #party-input {
+    padding-right: 0px;
+    padding-left: 10px;
   }
 
   .navbar-primary.collapsed {
@@ -81,11 +102,20 @@ body {
   input.filter-menu
   {
     height: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* color: #fff; */
   }
+
+  /* .one {
+    padding-left: 10px;
+  } */
 
 /* mobile friendly */
 
-  label.col-sm-2 
+  /* label.col-sm-2 
   {
       width: 20%;
       display:inline-block;
@@ -94,6 +124,6 @@ body {
   #county-input.col-sm-6
   {
       width: 60%;
-  }
+  } */
 
   /* Filter Menu */

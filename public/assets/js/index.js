@@ -1,6 +1,8 @@
-// Filter Menu 
+$(document).ready(function() {
 
-$('.btn-expand-collapse').click(function(e) {
+  // Filter Menu 
+
+  $('.btn-expand-collapse').click(function(e) {
     $('.navbar-primary').toggleClass('collapsed');
     var filterMenu = $('#filter-menu-icon');
     if (filterMenu.attr("class") == "glyphicon glyphicon-menu-right") {
@@ -8,6 +10,16 @@ $('.btn-expand-collapse').click(function(e) {
     }else {
       filterMenu.attr("class", "glyphicon glyphicon-menu-right");
     }   
+  });
+
+
+  
+
+  // Filter Menu
+
+
 });
 
-// Filter Menu
+
+
+
