@@ -21,7 +21,6 @@ $(document).ready(function() {
       zip: $("#zip").val().trim(),
       party: $("#party").val().trim(),
       status: $("#status").val().trim(),
-      age: $("#age").val().trim(),
       ward: $("#ward").val().trim(),
       district: $("#district").val().trim(),
       cd: $("#cd").val().trim(),
@@ -33,8 +32,8 @@ $(document).ready(function() {
       }
 
       console.log(filterObj);
-      $.post("/api/filter", filterObj, function() {
-
+      $.post("/api/filter", filterObj, function(data) {
+            console.log("Clientside JS", data);
       });
 
 
