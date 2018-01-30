@@ -5,19 +5,20 @@
       <form id="filter-menu">
         <div class="form-group row">
           <label for="county" class="col-md-3 col-sm-2 col-form-label filter-menu one">County</label>
-          <div class="col-md-9 col-sm-6" id="county-input">
+          <div class="col-md-8 col-sm-6" id="county-input">
             <input type="text" class="form-control filter-menu" id="county" placeholder="County">
           </div>
         </div>
         <hr>
         <div class="form-group row">
           <label for="address" class="col-md-3 col-sm-2 col-form-label filter-menu">Address</label>
-          <div class="col-md-9 col-sm-6 three" id="address-input">
+          <div class="col-md-8 col-sm-6 three" id="address-input">
             <input type="text" class="form-control filter-menu" id="address" placeholder="Address">
           </div>
         </div>
         <div class="form-group row">
-          <div class="col-md-7 col-sm-5" id="city-input">
+          <label for="city" class="col-md-3 col-sm-2 col-form-label filter-menu"></label>
+          <div class="col-md-6 col-sm-5"  id="city-input">
             <input type="text" class="form-control filter-menu" id="city" placeholder="City">
           </div>
           <div class="col-md-2 col-sm-2" id="state-input">
@@ -25,6 +26,7 @@
           </div>
         </div>
         <div class="form-group row">
+          <label for="zip" class="col-md-3 col-sm-2 col-form-label filter-menu"></label>
           <div class="col-md-5 col-sm-2" id="zip-input">
             <input type="text" class="form-control filter-menu" id="zip" placeholder="Zip Code">
           </div>
@@ -36,7 +38,7 @@
             <input type="text" class="form-control filter-menu" id="party" placeholder="Party">
           </div>
           <label for="status" class="col-md-2 col-sm-1 col-form-label filter-menu" id="status-label">Status</label>
-          <div class="col-md-5 col-sm-1" id="status-input">
+          <div class="col-md-4 col-sm-1" id="status-input">
             <input type="text" class="form-control filter-menu" id="status" placeholder="Status">
           </div>
           </div>
@@ -70,30 +72,31 @@
         </div>
         <div class="form-group row">
           <label for="freeholder" class="col-md-6 col-sm-1 col-form-label filter-menu" id="freeholder-label">Freeholder</label>
-          <div class="col-md-7 col-sm-1" id="freeholder-input">
+          <div class="col-md-6 col-sm-1" id="freeholder-input">
             <input type="text" class="form-control filter-menu" id="freeholder" placeholder="Freeholder">
           </div>
         </div>
         <div class="form-group row">
           <label for="school-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="school-district-label">School District</label>
-          <div class="col-md-7 col-sm-1" id="school-district-input">
+          <div class="col-md-6 col-sm-1" id="school-district-input">
             <input type="text" class="form-control filter-menu" id="school-district" placeholder="School District">
           </div>
         </div>
         <div class="form-group row">
           <label for="reg-school-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="reg-school-district-label">Regional School District</label>
-          <div class="col-md-7 col-sm-1" id="reg-school-district-input">
+          <div class="col-md-6 col-sm-1" id="reg-school-district-input">
             <input type="text" class="form-control filter-menu" id="reg-school-district" placeholder="Regional">
           </div>
         </div>
         <div class="form-group row">
           <label for="fire-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="fire-district-label">Fire District</label>
-          <div class="col-md-7 col-sm-1" id="fire-district-input">
+          <div class="col-md-6 col-sm-1" id="fire-district-input">
             <input type="text" class="form-control filter-menu" id="fire-district" placeholder="Fire District">
           </div>
         </div>
+         <button type="button" class="btn btn-primary filter-menu" id="filter-menu-submit">Submit</button>
       </form>
-       <button type="button" class="btn btn-primary filter-menu" id="filter-menu-submit">Submit</button>
+      
     </div>
 </nav>
 <!-- Filter Menu -->
