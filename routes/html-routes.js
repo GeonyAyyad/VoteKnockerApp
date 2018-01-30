@@ -15,13 +15,11 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    // res.sendFile(path.join(__dirname, "../index.html"));
     res.render("index");
   });
 
     // index route loads view.html
     app.get("/status", function(req, res) {
-      // res.sendFile(path.join(__dirname, "../status.html"));
       res.render("status");
     });
 

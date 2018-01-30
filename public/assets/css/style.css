@@ -97,3 +97,18 @@ body {
   }
 
   /* Filter Menu */
+.district-box{
+  background: #7a8897;
+  color: white;
+  height: 400px;
+}
+
+.flex-table {
+  display: flex;
+  justify-content: normal;
+}
+
+.button-center{
+  display: flex;
+  justify-content: center;
+}
