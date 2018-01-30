@@ -17,11 +17,11 @@ body {
 .navbar-primary {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: lightsteelblue;
-    left: 10px;
+    left: 0px;
     position: absolute;
     top: 70px;
-    width: 310px;
-    bottom: 25px;
+    width: 320px;
+    bottom: 0px;
     z-index: 8;
     overflow: auto;
     -webkit-transition: all 0.1s ease-in-out;
@@ -30,13 +30,13 @@ body {
   }
 
   .navbar-primary-menu {
-    padding: 15px 10px;
+    padding: 15px 15px;
   }
 
   #city-input,
   #zip-input {
     padding-right: 1px;
-    margin-left: 77px;
+    margin-left: 80px;
   }
 
   #state-input.col-md-2 {
@@ -47,56 +47,45 @@ body {
     padding-left: 0px;
   }
 
-  #status-label {
-    padding-left: 10px;
+  #status-label,
+  #district-label,
+  #ld-label {
+    padding-left: 5px;
   }
 
-  #district-label {
-    padding-left: 10px;
-    padding-right: 0px;
-    margin-left: 2px;
-  }
-
-  #status-input {
+  #status-input,
+  #district-input,
+  #ld-input {
     padding-left: 15px;
   }
-  #party-input,
-  #age-input,
-  #ward-input,
-  #cd-input{
-    padding-right: 0px;
-    padding-left: 10px;
-  }
 
-  #district-input {
-    padding-right: 0px;
-    padding-left: 20px;
-    margin-left: 8px;
-    margin-bottom: 10px;
-  }
-
-  #ld-input {
-    padding-right: 0px;
-    padding-left: 20px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-
+  #district-input,
+  #ld-input,
   #freeholder-input {
     margin-bottom: 10px;
   }
 
+  #reg-school-district-input {
+    margin-top: 8px;
+  }
+
+  #party-input,
+  #age-input,
+  #ward-input,
+  #cd-input{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 2px;
+  }
+
+  #freeholder-input,
   #reg-school-district-input,
   #school-district-input,
   #fire-district-input {
     margin-left: -26px;
   }
 
-  #reg-school-district-input {
-    padding-top: 10px;
-  }
-
- .navbar-primary.collapsed {
+  .navbar-primary.collapsed {
     padding-left: 20px;
     width: 5px;
     left: 0px;
@@ -145,7 +134,7 @@ body {
   input.filter-menu
   {
     height: 28px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -159,16 +148,15 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: .2em;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 90px;
   }
 
 
 /* mobile friendly */
 
-   label.col-sm-2 {
+   /* label.col-sm-2 {
       width: 25%;
-      /* display:inline-block; */
   }
 
   #county-input.col-sm-6,
@@ -177,13 +165,11 @@ body {
   }
 
   #city-input.col-sm-5 {
-    /* margin-left: 78px; */
     width: 57%;
   }
 
   #state-input.col-sm-2 {
     width: 18%;
-    /* margin-left: 1px; */
   }
 
   #zip-input.col-sm-2 {
@@ -227,7 +213,7 @@ body {
   }
 
   #freeholder-label.col-sm-1 {
-    width: 47%;
+    width: 49%;
   }
 
   #school-district-label.col-sm-1,
@@ -241,10 +227,7 @@ body {
   #reg-school-district-input.col-sm-1,
   #fire-district-input.col-sm-1  {
     width: 50%;
-  }
-
-
-
+  } */
 
 
   /* Filter Menu */
