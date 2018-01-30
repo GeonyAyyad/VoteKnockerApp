@@ -20,10 +20,10 @@ body {
     left: 10px;
     position: absolute;
     top: 70px;
-    width: 300px;
+    width: 310px;
     bottom: 25px;
     z-index: 8;
-    overflow: hidden;
+    overflow: auto;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
