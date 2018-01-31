@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
 	var VoterInteractions = sequelize.define("VoterInteractions", {
 		knocked: DataTypes.BOOLEAN,
 		litDropped: DataTypes.BOOLEAN,
@@ -18,8 +18,8 @@ module.exports = function(sequelize, DataTypes) {
 	});
 
 	//join Users with VoterInteractions
-	VoterInteractions.associate = function(models) {
-		VoterInteractions.belongsTo(model.Users);
+	VoterInteractions.associate = function (models) {
+		VoterInteractions.belongsTo(models.Users);
 	};
 
 	return VoterInteractions;
