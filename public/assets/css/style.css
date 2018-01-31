@@ -1,5 +1,13 @@
+#map {
+  height: 100%;
+}
+
+html,
 body {
-    background-color: lightslategrey;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightslategrey;
 }
 
 #main-content {
@@ -202,15 +210,4 @@ body {
 }
 
 
-    #map {
-      height: 100%;
-    }
 
-    /* Optional: Makes the sample page fill the window. */
-
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
