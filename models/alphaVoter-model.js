@@ -1,5 +1,5 @@
-module.exports = function(sequelize, DataTypes) {
-	
+module.exports = function (sequelize, DataTypes) {
+
 	//set up table with columns
 	var AlphaVoter = sequelize.define("AlphaVoter", {
 		county: DataTypes.STRING(30),
@@ -17,7 +17,7 @@ module.exports = function(sequelize, DataTypes) {
 		city: DataTypes.STRING(30),
 		municipality: DataTypes.STRING(30),
 		zip: DataTypes.INTEGER(5),
-		dob: DataTypes.DATE(10),
+		dob: DataTypes.DATE(6),
 		party: DataTypes.STRING(5),
 		ward: DataTypes.INTEGER(2),
 		district: DataTypes.INTEGER(2),
@@ -31,12 +31,9 @@ module.exports = function(sequelize, DataTypes) {
 	});
 
 	//join AlphaVoter with VoterHistory and VoterInteractions
-	AlphaVoter.associate = function(models) {
-		AlphaVoter.hasMany(models.VoterHistory,{
-			sourceKey: "voterId", 
-			onDelete: "cascade"
-		});
-		AlphaVoter.hasMany(models.VoterInteractions,{
+	AlphaVoter.associate = function (models) {
+		AlphaVoter.hasMany(models.VoterHistory);
+		AlphaVoter.hasMany(models.VoterInteractions, {
 			onDelete: "cascade"
 		});
 	};
