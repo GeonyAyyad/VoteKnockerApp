@@ -1,5 +1,13 @@
+#map {
+  height: 100%;
+}
+
+html,
 body {
-    background-color: lightslategrey;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightslategrey;
 }
 
 #main-content {
@@ -10,6 +18,15 @@ body {
  height: 50px;
 }
 
+#mainNav {
+  position: fixed;
+  border-bottom: 0;
+  background-color: lightsteelblue;
+}
+
+#mainNav.navbar-nav > li.nav-item > a {
+  color: #212529 ;
+}
 
 /* Filter Menu */
 .navbar-primary {
@@ -17,7 +34,7 @@ body {
     background-color: lightsteelblue;
     left: 0px;
     position: absolute;
-    top: 80px;
+    top: 20px;
     width: 500px;
     bottom: 0px;
     z-index: 8;
@@ -50,7 +67,7 @@ body {
 }
 
   .navbar-primary-menu {
-    padding: 30px 50px;
+    padding: 80px 50px 30px 50px;
   }
 
   .bottom-margin {
@@ -59,6 +76,10 @@ body {
 
   .more-bottom-margin {
     margin-bottom: 15px;
+  }
+
+  .top-padding {
+    padding-top: 5px;
   }
 
   #reg-school-district-input {
@@ -128,7 +149,15 @@ body {
   }
 
 
-  /*media queries*/
+
+  @media only screen and (max-width: 768px) {
+    .navbar-nav > li.nav-item > a {
+      font-size: 22px !important;
+      color: white !important;
+    }
+  
+  }
+
 
   @media only screen and (max-width: 425px) {
 
@@ -143,11 +172,11 @@ body {
     }
   
     #filter-menu-submit {
-      font-size: 10px;
+      font-size: 14px;
     }
   
     .navbar-primary-menu {
-      padding: 20px 15px;
+      padding: 90px 0px 30px 20px;
     }
   
     .navbar-primary {
@@ -169,12 +198,8 @@ body {
     text-transform: uppercase;
   }
 
-  #filter-menu-submit {
-    font-size: 6px;
-  }
-
   .navbar-primary-menu {
-    padding: 20px 15px;
+    padding: 90px 10px 30px 20px;
   }
 
   .navbar-primary {
@@ -185,15 +210,4 @@ body {
 }
 
 
-    #map {
-      height: 100%;
-    }
 
-    /* Optional: Makes the sample page fill the window. */
-
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }

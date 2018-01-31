@@ -24,12 +24,11 @@ module.exports = function(app) {
     });
 
     app.get("/userStats", function(req, res) {
-      // res.sendFile(path.join(__dirname, "../userStats.html"));
       res.render("userStats");
     });
 
     app.get("/interactions", function(req, res) {
-     // res.sendFile(path.join(__dirname, "../interactions.html"));
+
      res.render("interactions");
    });
 };
