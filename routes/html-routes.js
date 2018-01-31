@@ -29,7 +29,7 @@ module.exports = function(app) {
     });
 
     app.get("/interactions", function(req, res) {
-     // res.sendFile(path.join(__dirname, "../interaactions.html"));
+     // res.sendFile(path.join(__dirname, "../interactions.html"));
      res.render("interactions");
    });
 };

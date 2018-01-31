@@ -8,6 +8,12 @@ function initMap() {
         center: { lat: 40.7834338, lng: -74.2162569 },
         disableDefaultUI: true
     });
+
+   
+
+  
+    
+    
     $.post("/api/filter", function (data) {
             console.log(data);
         for (var i = 0, length = data.length; i < length; i++) {
@@ -15,17 +21,28 @@ function initMap() {
                 latLng = new google.maps.LatLng(results.lat, results.lng);
 
             // Creating a marker and putting it on the map
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            
             var marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
                 title: results.name
             });
+            var infowindow = new google.maps.InfoWindow({});
+            var contentString ='<a href="../interactions"><button type="button" class="btn btn-danger">Interact</button></a>';
+            marker.addListener('click', function () {
+                infowindow.setContent(contentString);
+                infowindow.open(map, this);
+                map.setCenter(this.getPosition());
+            });
             
-       
         }
         
     });
-
+    
 }
 $(document).ready(function () {
 
