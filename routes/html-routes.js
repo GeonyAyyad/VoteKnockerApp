@@ -28,6 +28,7 @@ module.exports = function(app) {
     });
 
     app.get("/interactions", function(req, res) {
+
      res.render("interactions");
    });
 };
