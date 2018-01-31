@@ -5,10 +5,10 @@ $(document).ready(function() {
   $('.btn-expand-collapse').click(function(e) {
     $('.navbar-primary').toggleClass('collapsed');
     var filterMenu = $('#filter-menu-icon');
-    if (filterMenu.attr("class") == "glyphicon glyphicon-menu-right") {
-      filterMenu.attr("class", "glyphicon glyphicon-menu-left");
+    if (filterMenu.attr("class") == "fa fa-caret-square-o-right") {
+      filterMenu.attr("class", "fa fa-caret-square-o-left");
     }else {
-      filterMenu.attr("class", "glyphicon glyphicon-menu-right");
+      filterMenu.attr("class", "fa fa-caret-square-o-right");
     }   
   });
 
@@ -38,19 +38,6 @@ $(document).ready(function() {
 
 
   });
-
-  REP, DEM, UNA, GRE
-
-  $(function() {
-    $('#party').autocomplete({
-      data: {
-      "REP":"REP",
-      "DEM": "DEM",
-      "UNA":"UMA",
-      "GRE":"GRE"
-      }
-    });
-}); 
 
 
   // Filter Menu
