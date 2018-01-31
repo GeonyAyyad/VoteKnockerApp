@@ -1,102 +1,102 @@
 <!-- Filter Menu -->
-<nav class="navbar-primary">
-  <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left" id="filter-menu-icon"></span></a>
-   <div class="navbar-primary-menu">
-      <form id="filter-menu">
-        <div class="form-group row">
-          <label for="county" class="col-md-3 col-sm-2 col-form-label filter-menu one">County</label>
-          <div class="col-md-8 col-sm-6" id="county-input">
-            <input type="text" class="form-control filter-menu" id="county" placeholder="County">
+<nav class="navbar-primary collapsed">
+  <div class="container">
+    <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left" id="filter-menu-icon"></span></a>
+    <div class="navbar-primary-menu">
+        <form id="filter-menu">
+          <div class="form-group row">
+            <label for="county" class="col-md-3 col-sm-2 col-form-label filter-menu one">County</label>
+            <div class="col-md-9 col-sm-6" id="county-input">
+              <input type="text" class="form-control filter-menu" id="county">
+            </div>
           </div>
-        </div>
-        <hr>
-        <div class="form-group row">
-          <label for="address" class="col-md-3 col-sm-2 col-form-label filter-menu">Address</label>
-          <div class="col-md-8 col-sm-6 three" id="address-input">
-            <input type="text" class="form-control filter-menu" id="address" placeholder="Address">
+          <hr>
+          <div class="form-group row">
+            <label for="address" class="col-md-3 col-sm-2 col-form-label filter-menu">Address</label>
+            <div class="col-md-9 col-sm-6 three" id="address-input">
+              <input type="text" class="form-control filter-menu" id="address" placeholder="Street">
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label for="city" class="col-md-3 col-sm-2 col-form-label filter-menu"></label>
-          <div class="col-md-6 col-sm-5"  id="city-input">
-            <input type="text" class="form-control filter-menu" id="city" placeholder="City">
+          <div class="form-group row">
+            <label for="city" class="col-md-3 col-sm-2 col-form-label filter-menu"></label>
+            <div class="col-md-7 col-sm-5"  id="city-input">
+              <input type="text" class="form-control filter-menu" id="city" placeholder="City">
+            </div>
+            <div class="col-md-2 col-sm-2" id="state-input">
+              <input type="text" class="form-control filter-menu" id="state" placeholder="ST">
+            </div>
           </div>
-          <div class="col-md-2 col-sm-2" id="state-input">
-            <input type="text" class="form-control filter-menu" id="state" placeholder="ST">
+          <div class="form-group row">
+            <label for="zip" class="col-md-3 col-sm-2 col-form-label filter-menu"></label>
+            <div class="col-md-5 col-sm-2" id="zip-input">
+              <input type="text" class="form-control filter-menu" id="zip" placeholder="Zip Code">
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label for="zip" class="col-md-3 col-sm-2 col-form-label filter-menu"></label>
-          <div class="col-md-5 col-sm-2" id="zip-input">
-            <input type="text" class="form-control filter-menu" id="zip" placeholder="Zip Code">
+          <hr>
+          <div class="form-group row">
+            <label for="party" class="col-md-2 col-sm-1 col-form-label filter-menu" id="party-label">Party</label>
+            <div class="col-md-4 col-sm-1" id="party-input">
+              <input type="text" class="form-control filter-menu" id="party">
+            </div>
+            <label for="status" class="col-md-2 col-sm-1 col-form-label filter-menu" id="status-label">Status</label>
+            <div class="col-md-4 col-sm-1" id="status-input">
+              <input type="text" class="form-control filter-menu" id="status">
+            </div>
+            </div>
+          <hr>
+          <div class="form-group row">
+            <label for="ward" class="col-md-2 col-sm-1 col-form-label filter-menu" id="ward-label">Ward</label>
+            <div class="col-md-4 col-sm-1" id="ward-input">
+              <input type="text" class="form-control filter-menu" id="ward">
+            </div>
+            <label for="district" class="col-md-2 col-sm-1 col-form-label filter-menu" id="district-label">District</label>
+            <div class="col-md-4 col-sm-1 bottom-space" id="district-input">
+              <input type="text" class="form-control filter-menu" id="district">
+            </div>
           </div>
-        </div>
-         <hr>
-        <div class="form-group row">
-          <label for="party" class="col-md-2 col-sm-1 col-form-label filter-menu" id="party-label">Party</label>
-          <div class="col-md-3 col-sm-1" id="party-input">
-            <input type="text" class="form-control filter-menu" id="party" placeholder="Party">
+          <div class="form-group row">
+            <label for="cd" class="col-md-2 col-sm-1 col-form-label filter-menu" id="cd-label">CD</label>
+            <div class="col-md-4 col-sm-1" id="cd-input">
+              <input type="text" class="form-control filter-menu" id="cd">
+            </div>
+            <label for="ld" class="col-md-2 col-sm-1 col-form-label filter-menu" id="ld-label">LD</label>
+            <div class="col-md-4 col-sm-1 more-bottom-space" id="ld-input">
+              <input type="text" class="form-control filter-menu" id="ld">
+            </div>
           </div>
-          <label for="status" class="col-md-2 col-sm-1 col-form-label filter-menu" id="status-label">Status</label>
-          <div class="col-md-4 col-sm-1" id="status-input">
-            <input type="text" class="form-control filter-menu" id="status" placeholder="Status">
+          <div class="form-group row">
+            <label for="freeholder" class="col-md-6 col-sm-1 col-form-label filter-menu" id="freeholder-label">Freeholder</label>
+            <div class="col-md-6 col-sm-1 bottom-space" id="freeholder-input">
+              <input type="text" class="form-control filter-menu" id="freeholder">
+            </div>
           </div>
+          <div class="form-group row">
+            <label for="school-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="school-district-label">School District</label>
+            <div class="col-md-6 col-sm-1 more-bottom-space" id="school-district-input">
+              <input type="text" class="form-control filter-menu" id="school-district">
+            </div>
           </div>
-        <hr>
-        {{!-- <div class="form-group row">
-          <label for="age" class="col-md-2 col-sm-1 col-form-label filter-menu" id="age-label">Age</label>
-          <div class="col-md-6 col-sm-1" id="age-input">
-            <input type="text" class="form-control filter-menu" id="age" placeholder="Age Range">
+          <div class="form-group row">
+            <label for="reg-school-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="reg-school-district-label">Regional School District</label>
+            <div class="col-md-6 col-sm-1" id="reg-school-district-input">
+              <input type="text" class="form-control filter-menu" id="reg-school-district">
+            </div>
           </div>
-        </div>
-        <hr> --}}
-        <div class="form-group row">
-          <label for="ward" class="col-md-2 col-sm-1 col-form-label filter-menu" id="ward-label">Ward</label>
-          <div class="col-md-3 col-sm-1" id="ward-input">
-            <input type="text" class="form-control filter-menu" id="ward" placeholder="Ward">
+          <div class="form-group row">
+            <label for="fire-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="fire-district-label">Fire District</label>
+            <div class="col-md-6 col-sm-1" id="fire-district-input">
+              <input type="text" class="form-control filter-menu" id="fire-district">
+            </div>
           </div>
-          <label for="district" class="col-md-2 col-sm-1 col-form-label filter-menu" id="district-label">District</label>
-          <div class="col-md-4 col-sm-1" id="district-input">
-            <input type="text" class="form-control filter-menu" id="district" placeholder="District">
+          <hr>
+          <div class="form-group row">
+            <label for="filter-menu-submit" class="col-md-8 col-sm-1 col-form-label filter-menu"></label>
+            <div class="col-md-4 col-sm-1">
+              <button type="button" class="btn btn-primary filter-menu" id="filter-menu-submit">Submit</button>
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label for="cd" class="col-md-2 col-sm-1 col-form-label filter-menu" id="cd-label">CD</label>
-          <div class="col-md-3 col-sm-1" id="cd-input">
-            <input type="text" class="form-control filter-menu" id="cd" placeholder="CD">
-          </div>
-          <label for="ld" class="col-md-2 col-sm-1 col-form-label filter-menu" id="ld-label">LD</label>
-          <div class="col-md-4 col-sm-1" id="ld-input">
-            <input type="text" class="form-control filter-menu" id="ld" placeholder="LD">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="freeholder" class="col-md-6 col-sm-1 col-form-label filter-menu" id="freeholder-label">Freeholder</label>
-          <div class="col-md-6 col-sm-1" id="freeholder-input">
-            <input type="text" class="form-control filter-menu" id="freeholder" placeholder="Freeholder">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="school-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="school-district-label">School District</label>
-          <div class="col-md-6 col-sm-1" id="school-district-input">
-            <input type="text" class="form-control filter-menu" id="school-district" placeholder="School District">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="reg-school-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="reg-school-district-label">Regional School District</label>
-          <div class="col-md-6 col-sm-1" id="reg-school-district-input">
-            <input type="text" class="form-control filter-menu" id="reg-school-district" placeholder="Regional">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="fire-district" class="col-md-6 col-sm-1 col-form-label filter-menu" id="fire-district-label">Fire District</label>
-          <div class="col-md-6 col-sm-1" id="fire-district-input">
-            <input type="text" class="form-control filter-menu" id="fire-district" placeholder="Fire District">
-          </div>
-        </div>
-         <button type="button" class="btn btn-primary filter-menu" id="filter-menu-submit">Submit</button>
-      </form>
-      
+        </form>
+      </div>
     </div>
 </nav>
 <!-- Filter Menu -->
