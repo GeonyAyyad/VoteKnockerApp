@@ -73,6 +73,11 @@ body {
 
   #city-input {
     padding-right: 0px;
+    margin-bottom: 2px;
+  }
+
+  #address-label {
+    padding-bottom: 0px;
   }
 
   /* #city-input,
@@ -148,13 +153,18 @@ body {
     color: #fff;
   }
 
-  input.filter-menu
+  input.filter-menu,
+  select.filter-menu
   {
-    height: 28px;
+    height: 22px !important;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
+  }
+
+  select.filter-menu {
+    padding: 0px;
   }
 
   #filter-menu-submit {
@@ -171,7 +181,7 @@ body {
 
 /* mobile friendly */
 
-   label.col-sm-2 {
+   /* label.col-sm-2 {
       width: 80px;
   }
 
@@ -235,19 +245,20 @@ body {
   #reg-school-district-input.col-sm-1,
   #fire-district-input.col-sm-1  {
     width: 158px;
-  }
+  } */
 
 
   /* Filter Menu */
 
   /*media queries*/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) {
 
   input.filter-menu
+  select.filter-menu
   {
-    height: 20px;
-    font-size: 10px;
+    height: 12px;
+    font-size: 8px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -255,14 +266,21 @@ body {
 
   #filter-menu-submit {
     font-size: 12px;
-    margin-top: 0px;
+    /* margin-top: 0px; */
   }
 
   .navbar-primary-menu {
-    padding: 5px 15px;
+    padding: 15px 15px;
   }
 
-  #district-input,
+  .navbar-primary {
+    /* top: 60px; */
+    width: 100%;
+    left:0;
+    right:0px
+  }
+
+  /* #district-input,
   #ld-input,
   #freeholder-input {
     margin-bottom: 5px;
@@ -279,5 +297,5 @@ body {
   #city-input,
   #state-input {
     margin-top: -7px;
-  }
+  } */
 }

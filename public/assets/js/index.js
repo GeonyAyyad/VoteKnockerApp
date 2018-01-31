@@ -39,6 +39,19 @@ $(document).ready(function() {
 
   });
 
+  REP, DEM, UNA, GRE
+
+  $(function() {
+    $('#party').autocomplete({
+      data: {
+      "REP":"REP",
+      "DEM": "DEM",
+      "UNA":"UMA",
+      "GRE":"GRE"
+      }
+    });
+}); 
+
 
   // Filter Menu
 
