@@ -31,10 +31,16 @@ $(document).ready(function() {
       fire: $("#fire-district").val().trim()
       }
 
+      
+ 
+
+
+
       console.log(filterObj);
       $.post("/api/filter", filterObj, function(data) {
             console.log("Clientside JS", data);
       });
+
 
 
   });
