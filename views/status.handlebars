@@ -1,54 +1,4 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Vote Knocker</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    {{!-- <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> --}}
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <!-- Custom styles for this template -->
-    <link href="../assets/css/clean-blog.min.css" rel="stylesheet">
-    <link href="../assets/css/style_status.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img id="logo" src="assets/img/voteknockerlogo.png"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/userStats">Stats</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login">Login</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
-    {{{ body }}}
-    
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Custom scripts for this template -->
-    <script src="../assets/js/clean-blog.min.js"></script>
-    <script src="../assets/js/status.js"></script>
+
     <!-- Main Content-->
     <br>
     <br>
@@ -58,7 +8,7 @@
         <div class="row-col-10">
           <div class="button-center">
             
-            <a href="/interactions">
+            <a href="/interactions/{{voterId}}">
               <button type="button" class="btn btn-danger btn-lg" >Knock This Voter</button>
             </a>
           </div>
@@ -77,15 +27,15 @@
         <div class="row-col-10">
           <div class="flex-table">
               <h3><id class="streetNumber">{{streetNum}}</id></h3>
-              <h3><id class="streetName">Bennett Ave</id></h3>
-              <h3><id class="unitNum">20</id></h3>
+              <h3><id class="streetName">{{streetName}}</id></h3>
+              <h3><id class="unitNum">{{unitNum}}</id></h3>
           </div>
         </div>
 
         <div class="row-col-10">
           <div class="flex-table">
-              <h3><id class="city">Staten Island</id></h3>
-              <h3><id class="zip">10312</id></h3>
+              <h3><id class="city">{{city}},</id></h3>
+              <h3><id class="zip">{{zip}}</id></h3>
           </div>
         </div>
 
@@ -93,16 +43,27 @@
               <!--     ADD STYLING FOR DISTRICT BOX -->
               <div class="district-box">
                 <h2> District Information </h2>
-                
-              </div>
+                <br>
+                <h3><id class="district">District: {{district}}</id></h3>
+                 <h3><id class="congDistrict">Congressional District: {{congDist}}</id></h3>
+
+                <h3><id class="legDistrict">Legislative District: {{legDist}}</id></h3>
+
+                <h3><id class="municipality">Municipality: {{municipality}}</id></h3>
+                <h3><id class="ward">Ward: {{ward}}</id></h3>
+                <h3><id class="freeholder">Freeholder: {{freeholder}}</id></h3>
+                <h3><id class="schoolDistrict">School District: {{schoolDist}}</id></h3>
+                <h3><id class="regionalSchool">Regional School: {{regionalSchool}}</id></h3>
+
+               
             </div>
             
             <!--   Voter History  -->
             <div class="row">
               <h2> Voting History</h2>
             </div>
-
-
+            
+              
 
   
             <!-- Interaction History -->

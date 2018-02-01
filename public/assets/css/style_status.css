@@ -1,5 +1,5 @@
 body {
-    background-color: lightslategrey;
+    background-color: #b4c4dc;
 }
 
 #main-content {
@@ -228,9 +228,10 @@ body {
 
   /* Filter Menu */
 .district-box{
-  background: #7a8897;
+  background: #b4c4dc;
   color: white;
   height: 400px;
+  padding: 20px;
 }
 
 .flex-table {
