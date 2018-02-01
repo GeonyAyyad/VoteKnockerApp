@@ -9,7 +9,7 @@ module.exports = function(app){
             res.json(data);
 
         } );       
-
+        
     });
 
     app.get("/voterhistory/:id", function(request, response){

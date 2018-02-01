@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
 
 	var VoterHistory = sequelize.define("VoterHistory", {
 		voterId: DataTypes.INTEGER(9),
@@ -10,10 +10,8 @@ module.exports = function(sequelize, DataTypes) {
 	});
 
 	//join VoterHistory with AlphaVoter
-	VoterHistory.associate = function(models) {
-		VoterHistory.belongsTo(models.AlphaVoter {
-			targetKey: "voterId"
-		});
+	VoterHistory.associate = function (models) {
+		VoterHistory.belongsTo(models.AlphaVoter);
 	};
 
 	return VoterHistory;
