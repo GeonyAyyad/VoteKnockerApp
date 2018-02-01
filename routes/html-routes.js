@@ -23,8 +23,12 @@ module.exports = function(app) {
     // index route loads view.html
     app.get("/status/:id", function(req, res) {
       var voterId = req.params.id;
+      console.log("Hello!");
       connection.query("SELECT * FROM voterHistory WHERE voterId =?", voterId, function(err, result) {
+        console.log(result[0]);
         res.render("status", result[0]);
+
+
       });
     });
 
@@ -32,14 +36,17 @@ module.exports = function(app) {
       res.render("userStats");
     });
 
-    app.get("/interactions", function(req, res) {
-
-     res.render("interactions");
-   });
+    
     app.get("/test", function(req, res) {
      // res.sendFile(path.join(__dirname, "../interaactions.html"));
      res.render("interactions");
    });
     
+  app.get("/interactions/:id", function(req, res) {
+      var voterId = req.params.id;
+      connection.query("SELECT * FROM voterHistory WHERE voterId =?", voterId, function(err, result) {
+        res.render("interactions", result[0]);
+      });
+    });
    
 };
