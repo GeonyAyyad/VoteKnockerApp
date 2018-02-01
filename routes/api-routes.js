@@ -14,6 +14,7 @@ module.exports = function(app){
         
     });
 
+
     app.get("/api/states", function(req,res){
         fs.readFile("public/assets/static/states.txt", "utf8", function(error, data) {
 
@@ -28,6 +29,31 @@ module.exports = function(app){
             res.json(dataArr);
     
             });  
+      });
+
+    app.get("/voterhistory/:id", function(request, response){
+    	var voterId = request.params.id;
+		connection.query("SELECT * FROM voterHistory WHERE voterId =?", voterId, function(err, res) {
+        console.log(res);
+        //for (var i = 0; i < res.length; i++) {
+          console.log(res.firstName + " " + res.middleName + " " + res.lastName);
+          console.log(res.streetNum + " " + res.streetName + " " + res.aptUnitNum);
+          console.log("Voter ID: " + res.voterId);
+          console.log("Legacy ID: " + res.legacyId);
+          console.log("Municipality: " + res.municipality);
+          console.log("Date of Birth: " + res.dob);
+          console.log("Ward: " + res.ward);
+          console.log("Party: " + res.party);
+          console.log("District: " + res.district);
+          console.log("Status: " + res.status);
+          console.log("Congressional District: " + res.congDist);
+          console.log("Legislative Distract: " + res.legDist);
+          console.log("Freeholder: " + res.freeholder);
+          console.log("School District: " + res.schoolDist);
+          console.log("Regional School: " + res.regionalSchool);
+          response.json(res);
+        //}        
+      });
     });
 
 
