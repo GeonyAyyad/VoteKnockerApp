@@ -1,6 +1,4 @@
 
-
-
 function initMap() {
     console.log('at maps');
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -26,20 +24,26 @@ function initMap() {
             var marker = new google.maps.Marker({
                 position: latLng,
                 map: map,
-                title: results.name
+                title: results.name,
+                address:results.address,
+                getName: function(){
+                    var text ='<p> '+ this.address +' </p>' + '<a href="../status/:id"><button type="button" class="btn btn-primary" id="button-status">Voter Status</button></a>';
+                    return text;
+                }
+
             });
+            //    info.push(marker.title);
             var infowindow = new google.maps.InfoWindow({});
-            var contentString ='<a href="../interactions"><button type="button" class="btn btn-danger">Interact</button></a>';
+            var contentString = marker.getName() + '<a href="../status/:id"><button type="button" class="btn btn-danger">Voter Status</button></a>';
             marker.addListener('click', function () {
-                infowindow.setContent(contentString);
+                infowindow.setContent(this.getName());
                 infowindow.open(map, this);
                 map.setCenter(this.getPosition());
             });
-            
+            console.log(info);
         }
-        
+
     });
-    
 }
 $(document).ready(function () {
 
@@ -73,6 +77,7 @@ $(document).ready(function () {
             regSchoolDistrict: $("#reg-school-district").val().trim(),
             fire: $("#fire-district").val().trim()
         }
+
 
         console.log(filterObj);
         $.post("/api/filter", filterObj, function (data) {
