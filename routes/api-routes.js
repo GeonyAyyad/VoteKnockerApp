@@ -56,6 +56,21 @@ module.exports = function(app){
       });
     });
 
+      app.post("/api/interactions", function(req,res){
+            connection.query( "INSERT INTO voterinteractions SET ?",
+            
+            {
+            // knocked: parseInt(req.body.knock),
+            // litDropped: parseInt(req.body.literature),
+            petitionSigned: false,
+            email: req.body.email,
+            phone: req.body.phone
+            },
 
-
-}
+            function(err, res) {
+            if (err) throw err;
+            console.log(res.affectedRows + " product inserted!\n");      
+            });  
+             }); 
+        
+    };
