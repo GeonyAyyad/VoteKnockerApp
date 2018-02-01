@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "test"
+    database: "AlphaVoterDBTest"
 });
 
 // Make connection.
@@ -20,3 +20,5 @@ connection.connect(function (err) {
 
 // Export connection for our ORM to use.
 module.exports = connection;
+
+
