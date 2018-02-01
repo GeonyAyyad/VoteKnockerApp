@@ -11,9 +11,6 @@ function initMap() {
 
    
 
-  
-    
-    
     $.post("/api/filter", function (data) {
             console.log(data);
         for (var i = 0, length = data.length; i < length; i++) {
@@ -77,22 +74,14 @@ $(document).ready(function () {
             fire: $("#fire-district").val().trim()
         }
 
-
-
-
-
-
         console.log(filterObj);
         $.post("/api/filter", filterObj, function (data) {
             console.log("Clientside JS", data);
         });
 
-
-
     });
 
 
-    // Filter Menu
 
 
 });

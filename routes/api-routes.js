@@ -1,4 +1,6 @@
 var connection = require("../config/connection");
+var fs = require("fs");
+var path = require("path");
 
 module.exports = function(app){
 
@@ -8,9 +10,26 @@ module.exports = function(app){
             console.log(data);
             res.json(data);
 
-        } );       
+        });       
         
     });
+
+
+    app.get("/api/states", function(req,res){
+        fs.readFile("public/assets/static/states.txt", "utf8", function(error, data) {
+
+            // If the code experiences any errors it will log the error to the console.
+            if (error) {
+                return console.log("Get States ", error);
+            }
+     
+            // Then split it by commas (to make it more readable)
+            var dataArr = data.split(",");
+    
+            res.json(dataArr);
+    
+            });  
+      });
 
     app.get("/voterhistory/:id", function(request, response){
     	var voterId = request.params.id;
