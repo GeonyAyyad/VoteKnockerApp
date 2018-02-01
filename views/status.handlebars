@@ -7,14 +7,14 @@
     <title>Vote Knocker</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
-    {{!-- <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> --}}
+    {{!-- <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> --}}
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
-    <link href="assets/css/clean-blog.min.css" rel="stylesheet">
-    <link href="assets/css/style_status.css" rel="stylesheet">
+    <link href="../assets/css/clean-blog.min.css" rel="stylesheet">
+    <link href="../assets/css/style_status.css" rel="stylesheet">
   </head>
   <body>
     <!-- Navigation -->
@@ -31,7 +31,7 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/status">Stats</a>
+              <a class="nav-link" href="/userStats">Stats</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login">Login</a>
@@ -47,8 +47,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Custom scripts for this template -->
-    <script src="assets/js/clean-blog.min.js"></script>
-    <script src="assets/js/status.js"></script>
+    <script src="../assets/js/clean-blog.min.js"></script>
+    <script src="../assets/js/status.js"></script>
     <!-- Main Content-->
     <br>
     <br>
@@ -64,18 +64,19 @@
           </div>
         </div>
          <br>
+         
         <div class="row-col-10">
           <div class="flex-table">
 
-              <h1><div id="firstName">Geony</div></h1>
-              <h1><div id="middleName">George </div></h1>
-              <h1><div id="lastName">Ayyad </div></h1>
+              <h1><div id="firstName">{{firstName}}</div></h1>
+              <h1><div id="middleName">{{middleName}}</div></h1>
+              <h1><div id="lastName">{{lastName}}</div></h1>
           </div>
         </div>
         
         <div class="row-col-10">
           <div class="flex-table">
-              <h3><id class="streetNumber">209</id></h3>
+              <h3><id class="streetNumber">{{streetNum}}</id></h3>
               <h3><id class="streetName">Bennett Ave</id></h3>
               <h3><id class="unitNum">20</id></h3>
           </div>
