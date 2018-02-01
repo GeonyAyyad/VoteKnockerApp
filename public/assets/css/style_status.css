@@ -238,6 +238,12 @@ body {
   justify-content: normal;
 }
 
+.flex-table > h1,
+.flex-table > h3
+{
+  padding-right:10px;
+}
+
 .button-center{
   display: flex;
   justify-content: center;
