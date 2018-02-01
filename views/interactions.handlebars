@@ -87,11 +87,9 @@
       <div class="jumbotron">
         <!-- Knocking Button -->
         
-         
-         
         <div class="row-col-10">
           <div class="flex-table">
-
+              <h1><div id="voterId">{{voterId}}</div></h1>
               <h1><div id="firstName">{{firstName}}</div></h1>
               <h1><div id="middleName">{{middleName}}</div></h1>
               <h1><div id="lastName">{{lastName}}</div></h1>
@@ -100,16 +98,16 @@
         
         <div class="row-col-10">
           <div class="flex-table">
-              <h3><id class="streetNumber">{{streetNum}}</id></h3>
-              <h3><id class="streetName">{{streetName}}</id></h3>
-              <h3><id class="unitNum">{{unitNum}}</id></h3>
+              <h3><id="streetNumber">{{streetNum}}</id></h3>
+              <h3><id="streetName">{{streetName}}</id></h3>
+              <h3><id="unitNum">{{unitNum}}</id></h3>
           </div>
         </div>
 
         <div class="row-col-10">
           <div class="flex-table">
-              <h3><id class="city">{{city}},</id></h3>
-              <h3><id class="zip">{{zip}}</id></h3>
+              <h3><id="city">{{city}},</id></h3>
+              <h3><id="zip">{{zip}}</id></h3>
           </div>
         </div>
 
@@ -118,18 +116,18 @@
 
       <p>Did you knock?</p>
       <form action="">
-        <input type="radio" name="gender" value="yes"> Yes<br>
-        <input type="radio" name="gender" value="no"> No<br>
+        <input type="radio" name="knock" value="1"> Yes<br>
+        <input type="radio" name="knock" value="0"> No<br>
       </form>
       <p>Did you hand out literature?</p>
       <form action="">
-        <input type="radio" name="gender" value="yes"> Yes<br>
-        <input type="radio" name="gender" value="no"> No<br>
+        <input type="radio" name="literature" value="1"> Yes<br>
+        <input type="radio" name="literature" value="0"> No<br>
       </form>
       <p>Did they sign petition?</p>
       <form action="">
-        <input type="radio" name="gender" value="yes"> Yes<br>
-        <input type="radio" name="gender" value="no"> No<br>
+        <input type="radio" name="petition" value="1"> Yes<br>
+        <input type="radio" name="petition" value="0"> No<br>
       </form>
       <br>
       <br>
@@ -142,7 +140,7 @@
       </div>
 
       
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="btn btn-default" id="add-interactions">Submit</button>
 
            
               </div>
