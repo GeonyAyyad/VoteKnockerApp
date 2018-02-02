@@ -37,7 +37,7 @@ function initMap() {
                    position: latLng,
                    map: map,
                    title: results.name,
-                   address: results.streetNum + " "+ results.streetName +" "+ results.aptUnitNum +", " + results.city +" " + results.zip,
+                   address: results.streetNum + " "+ results.streetName +", " + results.city +" " + results.zip,
                    icon: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
                    getName: function () {
                        var text = '<p> ' + this.address + ' </p>' + '<a href="../status/:id"><button type="button" class="btn btn-primary" id="button-status">Voter Status</button></a>';
