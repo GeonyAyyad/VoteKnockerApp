@@ -53,7 +53,7 @@ module.exports = function(app) {
           // });
 
           connection.query("SELECT * FROM voterinteractions", function(err, result) {
-            console.log(result[0]);
+            console.log(result);
             res.render("userStats", result);
           });
 
