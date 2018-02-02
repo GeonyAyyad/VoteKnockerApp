@@ -8,13 +8,6 @@ function initMap() {
     });
 
    
-
-<<<<<<< HEAD
-  
-  
-    
-=======
->>>>>>> master
     $.post("/api/filter", function (data) {
             console.log(data);
         for (var i = 0, length = data.length; i < length; i++) {
@@ -101,10 +94,7 @@ $(document).ready(function () {
             fire: $("#fire-district").val().trim()
         }
 
-<<<<<<< HEAD
-    
-=======
->>>>>>> master
+
 
         console.log(filterObj);
         $.post("/api/filter", filterObj, function (data) {
