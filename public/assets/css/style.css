@@ -1,7 +1,9 @@
 #map {
   height: 100%;
 }
-
+#button-status{
+  padding:6px 1px;
+}
 html,
 body {
   height: 100%;
@@ -10,9 +12,9 @@ body {
   background-color: lightslategrey;
 }
 
-#main-content {
+/* #main-content {
     padding-top: 60px;
-}
+} */
 
 #logo {
  height: 50px;
