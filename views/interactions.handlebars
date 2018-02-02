@@ -31,18 +31,25 @@
 
 
 <div container="survey">
+  <br>
 
-      <p>Did you knock?</p>
+      <h5>Did you knock?</h5>
       <form action="">
+        <input type="radio" name="gender" value="yes"> Yes<br>
+        <input type="radio" name="gender" value="no"> No<br>
+        <br>
         <input type="radio" name="knock" value="1"> Yes<br>
         <input type="radio" name="knock" value="0"> No<br>
       </form>
-      <p>Did you hand out literature?</p>
+      <h5>Did you hand out literature?</h5>
       <form action="">
+        <input type="radio" name="gender" value="yes"> Yes<br>
+        <input type="radio" name="gender" value="no"> No<br>
+        <br>
         <input type="radio" name="literature" value="1"> Yes<br>
         <input type="radio" name="literature" value="0"> No<br>
       </form>
-      <p>Did they sign petition?</p>
+      <h5>Did they sign petition?</h5>
       <form action="">
         <input type="radio" name="petition" value="1"> Yes<br>
         <input type="radio" name="petition" value="0"> No<br>
@@ -54,9 +61,11 @@
         <label for="inputEmail">Email: </label>
         <input type="email" class="form-control" id="extraEmail" placeholder="email">
         <label for="inputPhone">Phone: </label>
-        <input type="phone" class="form-control" id="extraPhone" placeholder="email">
+        <input type="phone" class="form-control" id="extraPhone" placeholder="(***)  *** - ****">
       </div>
 
+      <br>
+    <button type="submit" href="/status/{{voterId}}"class="btn btn-default">Submit</button>
       
     <button type="submit" class="btn btn-default" id="add-interactions">Submit</button>
 
