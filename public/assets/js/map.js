@@ -25,7 +25,7 @@ function initMap() {
                map: map,
                title: results.name,
                address:results.address,
-               icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.pnghttp://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+               icon: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
                getName: function(){
                    var text ='<p> '+ this.address +' </p>' + '<a href="../status/:id"><button type="button" class="btn btn-primary" id="button-status">Voter Status</button></a>';
                    return text;
@@ -38,7 +38,7 @@ function initMap() {
                    map: map,
                    title: results.name,
                    address: results.address,
-                   icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
+                   icon: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
                    getName: function () {
                        var text = '<p> ' + this.address + ' </p>' + '<a href="../status/:id"><button type="button" class="btn btn-primary" id="button-status">Voter Status</button></a>';
                        return text;
