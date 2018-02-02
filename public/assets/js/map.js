@@ -56,7 +56,7 @@ function initMap() {
                 infowindow.open(map, this);
                 map.setCenter(this.getPosition());
             });
-            console.log(info);
+            // console.log(info);
         }
 
     });
