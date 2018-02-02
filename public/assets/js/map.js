@@ -27,7 +27,7 @@ function initMap() {
                address:results.streetNum + " "+ results.streetName +", " + results.city +" " + results.zip,
                icon: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
                getName: function(){
-                   var text ='<p> '+ this.address +' </p>' + '<a href="../status/:'results.voterId'"><button type="button" class="btn btn-primary" id="button-status">Voter Status</button></a>';
+                   var text ='<p> '+ this.address +' </p>' + '<a href="../status/'results.voterId'"><button type="button" class="btn btn-primary" id="button-status">Voter Status</button></a>';
                    return text;
                }
 
@@ -40,7 +40,7 @@ function initMap() {
                    address: results.streetNum + " "+ results.streetName +", " + results.city +" " + results.zip,
                    icon: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
                    getName: function () {
-                       var text = '<p> ' + this.address + ' </p>' + '<a href="../status/:'results.voterId'"><button type="button" class="btn btn-primary" id="button-status">Voter Status</button></a>';
+                       var text = '<p> ' + this.address + ' </p>' + '<a href="../status/'results.voterId'"><button type="button" class="btn btn-primary" id="button-status">Voter Status</button></a>';
                        return text;
                    }
                });
