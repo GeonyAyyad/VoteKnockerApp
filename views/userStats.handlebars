@@ -14,12 +14,30 @@
     </tr>
   </thead>
   <tbody>
-    {{#each result}}
+    {{#each interactions}}
     <tr>
       <td>{{id}}</td>
-      <td>{{knocked}}</td>
-      <td>{{litDroppped}}</td>
-      <td>{{petitionSigned}}</td>
+      <td>
+        {{#if knocked}}
+          Yes
+        {{else}}
+          No
+        {{/if}}
+      </td>
+       <td>
+        {{#if litDropped}}
+          Yes
+        {{else}}
+          No
+        {{/if}}
+      </td>
+      <td>
+        {{#if petitionSigned}}
+          Yes
+        {{else}}
+          No
+        {{/if}}
+      </td>
       <td>{{email}}</td>
       <td>{{phone}}</td>
       <td>{{createdAt}}</td>
