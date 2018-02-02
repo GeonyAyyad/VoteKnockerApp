@@ -38,7 +38,6 @@ module.exports = function(app) {
   app.get("/interactions/:id", function(req, res) {
       var voterId = req.params.id;
       connection.query("SELECT * FROM voterHistory WHERE voterId =?", voterId, function(err, result) {
-        console.log(result[0]);
         res.render("interactions", result[0]);
       });
     });
@@ -54,7 +53,10 @@ module.exports = function(app) {
 
           connection.query("SELECT * FROM voterinteractions", function(err, result) {
             console.log(result);
-            res.render("userStats", result);
+            var interaction = {
+              interactions : result
+            };
+            res.render("userStats", interaction);
           });
 
       });
