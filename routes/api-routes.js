@@ -2,6 +2,8 @@ var connection = require("../config/connection");
 var fs = require("fs");
 var path = require("path");
 
+var db = require("../models");
+
 module.exports = function(app){
 
     app.post("/api/filter", function(req,res){
@@ -56,21 +58,28 @@ module.exports = function(app){
       });
     });
 
-      app.post("/api/interactions", function(req,res){
-            connection.query( "INSERT INTO voterinteractions SET ?",
-            
-            {
-            // knocked: parseInt(req.body.knock),
-            // litDropped: parseInt(req.body.literature),
-            petitionSigned: false,
-            email: req.body.email,
-            phone: req.body.phone
-            },
 
-            function(err, res) {
-            if (err) throw err;
-            console.log(res.affectedRows + " product inserted!\n");      
-            });  
-             }); 
-        
-    };
+        // POST route for saving a new interaction
+        app.post("/api/interactions", function(req, res) {
+            var knocked = req.body.knock ? true : false;
+            var litDropped = req.body.literature ? true : false;
+            var petitionSigned = req.body.petition ? true : false;
+
+            // create takes an argument of an object describing the item we want to
+            // insert into our table. In this case we just we pass in an object with a text
+            // and complete property
+            db.VoterInteractions.create({
+                knocked: knocked,
+                litDropped: litDropped,
+                petitionSigned: petitionSigned,
+                email: req.body.email,
+                phone: req.body.phone
+            }).then(function(dbInteraction) {
+            // We have access to the new todo as an argument inside of the callback function
+            res.json(dbInteraction);
+            });
+        });
+
+
+
+    };  //module.exports
