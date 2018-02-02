@@ -8,3 +8,43 @@
 
   /*media queries*/
 
+@media only screen and (max-width: 320px) {
+
+  input.filter-menu
+  {
+    height: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  #filter-menu-submit {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  .navbar-primary-menu {
+    padding: 5px 15px;
+  }
+
+  #district-input,
+  #ld-input,
+  #freeholder-input {
+    margin-bottom: 5px;
+  }
+
+  #reg-school-district-input {
+    margin-top: 4px;
+  }
+
+  #fire-district-label,
+  #fire-district-input {
+    margin-top: -5px;
+  }
+  #city-input,
+  #state-input {
+    margin-top: -7px;
+  }
+}
+
