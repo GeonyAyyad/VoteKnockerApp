@@ -2,7 +2,7 @@
 .district-box{
   background: #b4c4dc;
   color: white;
-  height: 400px;
+  height: 500px;
   padding: 20px;
 }
 
@@ -50,4 +50,7 @@
     overflow: hidden;
 }
 
-  
+.extraContact {
+width: 300px;
+}
+
