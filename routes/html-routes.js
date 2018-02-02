@@ -24,7 +24,7 @@ module.exports = function(app) {
 
   app.get("/status/:id", function(req, res) {
       var voterId = req.params.id;
-      connection.query("SELECT * FROM voterHistory WHERE voterId =?", voterId, function(err, result) {
+      connection.query("SELECT * FROM voterhistories2 WHERE voterId =?", voterId, function(err, result) {
         console.log(result[0]);
         res.render("status", result[0]);
       });
@@ -37,7 +37,7 @@ module.exports = function(app) {
     
   app.get("/interactions/:id", function(req, res) {
       var voterId = req.params.id;
-      connection.query("SELECT * FROM voterHistory WHERE voterId =?", voterId, function(err, result) {
+      connection.query("SELECT * FROM voterhistories2 WHERE voterId =?", voterId, function(err, result) {
         res.render("interactions", result[0]);
       });
     });
@@ -45,12 +45,6 @@ module.exports = function(app) {
       // GET route for getting all of the stats
       app.get("/stats", function(req, res) {
      
-          // // findAll returns all entries for a table when used with no options
-          // db.VoterInteractions.findAll({}).then(function(dbInteractions) {
-          //   console.log("/stats", dbInteractions);
-          //   res.render("userStats", dbInteractions);
-          // });
-
           connection.query("SELECT * FROM voterinteractions", function(err, result) {
             console.log(result);
             var interaction = {
