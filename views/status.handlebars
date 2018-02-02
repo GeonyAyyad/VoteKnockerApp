@@ -57,12 +57,18 @@
 
                
             </div>
+            <br>
             
             <!--   Voter History  -->
             <div class="row">
+              <br>
               <h2> Voting History</h2>
             </div>
-            
+
+              <h3><id class="Party">Party: {{party}}</id></h3>
+
+              <h3><id class="Status">Status: {{status}}</id></h3>
+              <br>
               
 
   
@@ -70,13 +76,15 @@
 
             <div class="row">
               <h2> Interaction History</h2>
+              <br>
+              <br>
             </div>
             <!-- Knocking Button -->
             <div class="row-col-10">
               <div class="button-center">
                 
-                <a href="/interactions">
-                  <button type="button" class="btn btn-danger btn-lg" >Knock This Voter</button>
+               <a href="/interactions/{{voterId}}">
+              <button type="button" class="btn btn-danger btn-lg" >Knock This Voter</button>
                 </a>
               </div>
             </div>
